@@ -1,0 +1,17 @@
+{
+  "name": "Monokle Default Templates Plugin",
+  "author": "kubeshop.io",
+  "version": "1.0.0",
+  "description": "This plugin provides the default templates for Monokle manifest creation",
+  "license": "MIT",
+  "repository": "https://github.com/kubeshop/monokle-default-templates-plugin",
+  "monoklePlugin": {
+    "id": "io.kubeshop.monokle.plugins.default-templates",
+    "modules": [
+      {
+        "type": "template",
+        "path": "deployment-template"
+      }
+    ]
+  }
+}

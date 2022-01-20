@@ -1,0 +1,34 @@
+{
+    "type": "object",
+    "required": [
+      "name",
+      "image",
+      "targetPort"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "namespace": {
+        "type": "string"
+      },
+      "image": {
+        "type": "string"
+      },
+      "servicePort": {
+        "type": "number",
+        "default": 80
+      },
+      "targetPort": {
+        "type": "number"
+      },
+      "serviceType": {
+        "type": "string",
+        "default": "LoadBalancer",
+        "enum": [
+          "LoadBalancer",
+          "NodePort"
+        ]
+      }
+    }
+  }

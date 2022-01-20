@@ -1,0 +1,24 @@
+{
+  "name": "Basic Service Deployment",
+  "id": "io.kubeshop.monokle.templates.default.deployment-template",
+  "author": "olensmar",
+  "version": "1.0.0",
+  "description": "Creates a Service and Deployment for the specified container image",
+  "repository" : "",
+  "type": "vanilla",
+  "forms": [
+    {
+      "name": "Deployment Settings",
+      "description": "Specify the image to deploy and related settings.",
+      "schema": "form-schema.json",
+      "uiSchema": "form-ui-schema.json"
+    }
+  ],
+  "manifests": [
+    {
+      "filePath": "deployment.yaml"
+    }
+  ],
+  "resultMessage": "Deployment created",
+  "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin"
+}
