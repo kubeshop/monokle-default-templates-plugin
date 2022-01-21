@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: [[forms[0].name]]
+spec:
+  template:
+    spec:
+      containers:
+        - image: [[forms[0].image]]
+          name: [[forms[0].name]]
+          resources: {}
+          command:
+            - [[forms[0].command]]
+      restartPolicy: Never

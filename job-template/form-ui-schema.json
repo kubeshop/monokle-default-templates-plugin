@@ -1,0 +1,19 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:help": "The name of the Job"
+  },
+  "namespace": {
+    "ui:title": "Namespace",
+    "ui:help": "The target namespace for the Job",
+    "ui:widget": "namespaceSelection"
+  },
+  "image": {
+    "ui:title": "Image",
+    "ui:help": "The image name to run, for example nginx-ingress:latest"
+  },
+  "command": {
+    "ui:title": "Command",
+    "ui:help": "An optional command to run in the image"
+  }
+}

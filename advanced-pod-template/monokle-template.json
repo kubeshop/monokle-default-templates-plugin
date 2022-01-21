@@ -1,0 +1,24 @@
+{
+  "name": "Advanced Kubernetes Pod",
+  "id": "io.kubeshop.monokle.templates.default.advanced-pod-template",
+  "author": "kubeshop.io",
+  "version": "1.0.0",
+  "description": "Creates a Pod for the specified image",
+  "repository" : "",
+  "type": "vanilla",
+  "forms": [
+    {
+      "name": "Pod Settings",
+      "description": "Specify the settings to use for your Pod",
+      "schema": "form-schema.json",
+      "uiSchema": "form-ui-schema.json"
+    }
+  ],
+  "manifests": [
+    {
+      "filePath": "template.yaml"
+    }
+  ],
+  "resultMessage": "Pod resource created successfully!",
+  "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin"
+}

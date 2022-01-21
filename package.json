@@ -11,6 +11,18 @@
       {
         "type": "template",
         "path": "deployment-template"
+      },
+      {
+        "type": "template",
+        "path": "job-template"
+      },
+      {
+        "type": "template",
+        "path": "simple-pod-template"
+      },
+      {
+        "type": "template",
+        "path": "advanced-pod-template"
       }
     ]
   }

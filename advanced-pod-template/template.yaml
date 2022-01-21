@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Pod
+metadata:
+  name: [[forms[0].name]]
+spec:
+  containers:
+    - image: [[forms[0].image]]
+      name: [[forms[0].name]]
+      resources: {}
+      command:
+        - [[forms[0].cmd]]
+      args:
+        - [[ forms[0].args.join("\n        - ") ]]

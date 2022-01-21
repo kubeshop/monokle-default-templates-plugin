@@ -1,7 +1,7 @@
 {
   "name": "Basic Service Deployment",
   "id": "io.kubeshop.monokle.templates.default.deployment-template",
-  "author": "olensmar",
+  "author": "kubeshop.io",
   "version": "1.0.0",
   "description": "Creates a Service and Deployment for the specified container image",
   "repository" : "",
@@ -16,7 +16,7 @@
   ],
   "manifests": [
     {
-      "filePath": "deployment.yaml"
+      "filePath": "template.yaml"
     }
   ],
   "resultMessage": "Deployment created",
