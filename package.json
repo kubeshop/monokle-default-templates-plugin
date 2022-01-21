@@ -23,6 +23,10 @@
       {
         "type": "template",
         "path": "advanced-pod-template"
+      },
+      {
+        "type": "template",
+        "path": "simple-role-template"
       }
     ]
   }
