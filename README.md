@@ -10,6 +10,7 @@ This plugin contains the default templates included with Monokle.
 | [Basic Pod](simple-pod-template)               | Creates a basic Pod                      |
 | [Advanced Pod](advanced-pod-template)          | Creates a Pod with command and arguments |
 | [Deployment with Service](deployment-template) | Creates a Deployment and Service         |
+| [Simple Role](simple-role-template)            | Creates a standalone Role                |
 
 
 ## Modifying / Contributing
