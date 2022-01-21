@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: [[forms[0].name]]
+[[ forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
 spec:
   template:
     spec:

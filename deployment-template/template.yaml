@@ -4,6 +4,7 @@ metadata:
   labels:
     app: [[forms[0].name]]
   name: [[forms[0].name]]
+[[ forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
 spec:
   replicas: 1
   selector:
@@ -24,6 +25,7 @@ metadata:
   labels:
     app: [[forms[0].name]]
   name: [[forms[0].name]]
+[[ forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
 spec:
   ports:
     - port: [[forms[0].servicePort]]

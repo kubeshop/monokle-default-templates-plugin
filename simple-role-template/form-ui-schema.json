@@ -1,0 +1,26 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:help": "The name of the Rule"
+  },
+  "namespace": {
+    "ui:title": "Namespace",
+    "ui:help": "The target namespace for the Rule",
+    "ui:widget": "namespaceSelection"
+  },
+  "apiGroup": {
+    "ui:title": "API Group",
+    "ui:help": "Which API group this Rule applies to, for example 'argoproj.io'"
+  },
+  "resources": {
+    "ui:title": "Resources",
+    "ui:help": "Which types of resources group this Rule applies to"
+  },
+  "verbs": {
+    "ui:title": "Verbs",
+    "ui:widget": "checkboxes",
+    "ui:options": {
+      "inline": true
+    }
+  }
+}

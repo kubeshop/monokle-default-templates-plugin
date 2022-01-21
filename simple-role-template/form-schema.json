@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "name",
+    "image"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "my-rule"
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "apiGroup": {
+      "type": "string"
+    },
+    "resources": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "verbs": {
+      "items": {
+        "type": "string",
+        "enum": ["create", "get", "list", "watch", "update", "patch", "delete"]
+      },
+      "type": "array",
+      "uniqueItems": true
+    }
+  }
+}
