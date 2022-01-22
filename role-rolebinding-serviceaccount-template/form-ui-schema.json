@@ -1,7 +1,11 @@
 {
-  "name": {
-    "ui:title": "Name",
-    "ui:help": "The name of the Role"
+  "roleName": {
+    "ui:title": "Role",
+    "ui:help": "The name of the Role to create"
+  },
+  "serviceAccountName": {
+    "ui:title": "Service Account",
+    "ui:help": "The name of the ServiceAccount to create"
   },
   "namespace": {
     "ui:title": "Namespace",
@@ -25,4 +29,5 @@
     },
     "ui:help": "A list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions for the Role."
   }
+
 }

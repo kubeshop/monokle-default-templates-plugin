@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "serviceAccountName",
+    "targetRole",
+    "roleName",
+    "apiGroup",
+    "resources",
+    "verbs"
+  ],
+  "properties": {
+    "serviceAccountName": {
+      "type": "string",
+      "default": "my-service-account"
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "targetRole": {
+      "type": "string"
+    }
+  }
+}

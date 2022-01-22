@@ -1,0 +1,15 @@
+{
+  "serviceAccountName": {
+    "ui:title": "Service Account",
+    "ui:help": "The name of the ServiceAccount to create"
+  },
+  "targetRole": {
+    "ui:title": "Target Role",
+    "ui:help": "The role to bind to the created ServiceAccount"
+  },
+  "namespace": {
+    "ui:title": "Namespace",
+    "ui:help": "The target namespace for the Role",
+    "ui:widget": "namespaceSelection"
+  }
+}

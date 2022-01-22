@@ -1,15 +1,20 @@
 {
   "type": "object",
   "required": [
-    "name",
+    "serviceAccountName",
+    "roleName",
     "apiGroup",
     "resources",
     "verbs"
   ],
   "properties": {
-    "name": {
+    "roleName": {
       "type": "string",
       "default": "my-role"
+    },
+    "serviceAccountName": {
+      "type": "string",
+      "default": "my-service-account"
     },
     "namespace": {
       "type": "string"
@@ -33,5 +38,6 @@
       "uniqueItems": true,
       "default":["get"]
     }
+
   }
 }

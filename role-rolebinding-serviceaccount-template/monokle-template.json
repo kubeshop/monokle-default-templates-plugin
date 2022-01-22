@@ -1,0 +1,24 @@
+{
+  "name": "Role, RoleBinding and ServiceAccount",
+  "id": "io.kubeshop.monokle.templates.default.role-rolebinding-serviceaccount-template",
+  "author": "kubeshop.io",
+  "version": "1.0.0",
+  "description": "Creates a Role with a RoleBinding and a ServiceAccount",
+  "repository" : "",
+  "type": "vanilla",
+  "forms": [
+    {
+      "name": "Role Settings",
+      "description": "Specify the settings for your Role, RoleBinding and ServiceAccount",
+      "schema": "form-schema.json",
+      "uiSchema": "form-ui-schema.json"
+    }
+  ],
+  "manifests": [
+    {
+      "filePath": "template.yaml"
+    }
+  ],
+  "resultMessage": "Role, RoleBinding and ServiceAccount resources created successfully!",
+  "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin"
+}

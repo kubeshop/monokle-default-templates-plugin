@@ -1,4 +1,4 @@
-apiVersion: batch/v1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: [[forms[0].name]]

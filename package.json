@@ -27,6 +27,14 @@
       {
         "type": "template",
         "path": "simple-role-template"
+      },
+      {
+        "type": "template",
+        "path": "rolebinding-serviceaccount-template"
+      },
+      {
+        "type": "template",
+        "path": "role-rolebinding-serviceaccount-template"
       }
     ]
   }

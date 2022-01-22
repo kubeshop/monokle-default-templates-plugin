@@ -1,0 +1,31 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: [[forms[0].roleName]]
+[[ forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
+rules:
+  - apiGroups:
+      - [[forms[0].apiGroup]]
+    resources:
+      - [[ forms[0].resources.join("\n      - ") ]]
+    verbs:
+      - [[ forms[0].verbs.join("\n      - ") ]]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: [[forms[0].serviceAccountName]]-[[forms[0].roleName]]-binding
+[[ forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
+subjects:
+- kind: ServiceAccount
+  name: [[ forms[0].serviceAccountName ]]
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: [[ forms[0].roleName ]]
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: [[ forms[0].serviceAccountName ]]
+[[ forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
