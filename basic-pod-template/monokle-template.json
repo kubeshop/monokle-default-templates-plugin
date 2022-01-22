@@ -1,15 +1,15 @@
 {
-  "name": "Basic Service Deployment",
-  "id": "io.kubeshop.monokle.templates.default.deployment-template",
+  "name": "Basic Kubernetes Pod",
+  "id": "io.kubeshop.monokle.templates.default.basic-pod-template",
   "author": "kubeshop.io",
   "version": "1.0.0",
-  "description": "Creates a Service and Deployment for a specified Image",
+  "description": "Creates a Pod for a specified Image",
   "repository" : "",
   "type": "vanilla",
   "forms": [
     {
-      "name": "Deployment Settings",
-      "description": "Specify the Image to deploy and related settings.",
+      "name": "Pod Settings",
+      "description": "Specify the Image to use",
       "schema": "form-schema.json",
       "uiSchema": "form-ui-schema.json"
     }
@@ -19,6 +19,6 @@
       "filePath": "template.yaml"
     }
   ],
-  "resultMessage": "Deployment created",
+  "resultMessage": "Pod resource created successfully!",
   "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin"
 }

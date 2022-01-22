@@ -1,0 +1,28 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:help": "The name of the created Service"
+  },
+  "namespace": {
+    "ui:title": "Namespace",
+    "ui:help": "The target namespace for the created Service",
+    "ui:widget": "namespaceSelection"
+  },
+  "podSelector": {
+    "ui:title": "Pod Selector",
+    "ui:help": "The label name-value pair to use for selecting target Pod(s) for this Service",
+    "ui:widget": "podSelectorSelection"
+  },
+  "targetPort": {
+    "ui:title": "Target Port",
+    "ui:help": "The port exposed by the target Pod(s)"
+  },
+  "servicePort": {
+    "ui:title": "Service Port",
+    "ui:help": "The port to expose the Service on"
+  },
+  "serviceType": {
+    "ui:title": "Service Type",
+    "ui:help": "The type of Service to create"
+  }
+}

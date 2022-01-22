@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: [[forms[0].name]]
+[[ forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
+spec:
+  ports:
+    - port: [[forms[0].servicePort]]
+      protocol: TCP
+      targetPort: [[forms[0].targetPort]]
+  selector:
+    [[forms[0].podSelector]]
+  type: [[forms[0].serviceType]]

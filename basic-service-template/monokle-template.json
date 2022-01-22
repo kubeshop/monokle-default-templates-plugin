@@ -1,15 +1,15 @@
 {
-  "name": "Basic Kubernetes Job",
-  "id": "io.kubeshop.monokle.templates.default.job-template",
+  "name": "Basic Service",
+  "id": "io.kubeshop.monokle.templates.default.basic-service-template",
   "author": "kubeshop.io",
   "version": "1.0.0",
-  "description": "Creates a Job for the specified image",
+  "description": "Creates a basic Service",
   "repository" : "",
   "type": "vanilla",
   "forms": [
     {
-      "name": "Job Settings",
-      "description": "Specify the settings for your Job",
+      "name": "Service Settings",
+      "description": "Specify the settings for the Service to create.",
       "schema": "form-schema.json",
       "uiSchema": "form-ui-schema.json"
     }
@@ -19,6 +19,6 @@
       "filePath": "template.yaml"
     }
   ],
-  "resultMessage": "Job resource created successfully!",
+  "resultMessage": "Service created",
   "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin"
 }
