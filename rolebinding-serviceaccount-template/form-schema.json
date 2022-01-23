@@ -1,12 +1,7 @@
 {
   "type": "object",
   "required": [
-    "serviceAccountName",
-    "targetRole",
-    "roleName",
-    "apiGroup",
-    "resources",
-    "verbs"
+    "serviceAccountName"
   ],
   "properties": {
     "serviceAccountName": {
@@ -19,14 +14,17 @@
     "isClusterRole": {
       "type": "boolean",
       "title": "Bind to ClusterRole",
-      "enum": [ true, false ] 
+      "enum": [
+        true,
+        false
+      ]
     },
     "targetRole": {
       "type": "string"
     },
     "targetClusterRole": {
       "type": "string",
-      "readOnly": true 
+      "readOnly": true
     }
   },
   "dependencies": {
@@ -35,7 +33,9 @@
         {
           "properties": {
             "isClusterRole": {
-              "enum": [true]
+              "enum": [
+                true
+              ]
             },
             "targetRole": {
               "readOnly": true
@@ -48,7 +48,9 @@
         {
           "properties": {
             "isClusterRole": {
-              "enum": [false]
+              "enum": [
+                false
+              ]
             },
             "targetRole": {
               "readOnly": false
