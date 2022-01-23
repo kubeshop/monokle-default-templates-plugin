@@ -11,6 +11,11 @@
       "type": "string",
       "default": "my-role"
     },
+    "isClusterRole": {
+      "type": "boolean",
+      "title": "Create ClusterRole",
+      "enum": [ true, false ] 
+    },
     "namespace": {
       "type": "string"
     },
@@ -22,16 +27,54 @@
         "type": "string"
       },
       "type": "array",
-      "default": ["'*'"]
+      "default": [
+        "'*'"
+      ]
     },
     "verbs": {
       "items": {
         "type": "string",
-        "enum": ["create", "get", "list", "watch", "update", "patch", "delete"]
+        "enum": [
+          "create",
+          "get",
+          "list",
+          "watch",
+          "update",
+          "patch",
+          "delete"
+        ]
       },
       "type": "array",
       "uniqueItems": true,
-      "default":["get"]
+      "default": [
+        "get"
+      ]
+    }
+  },
+  "dependencies": {
+    "isClusterRole": {
+      "oneOf": [
+        {
+          "properties": {
+            "isClusterRole": {
+              "enum": [true]
+            },
+            "namespace": {
+              "readOnly": true
+            }
+          }
+        },
+        {
+          "properties": {
+            "isClusterRole": {
+              "enum": [false]
+            },
+            "namespace": {
+              "readOnly": false
+            }
+          }
+        }
+      ]
     }
   }
 }

@@ -12,6 +12,11 @@
       "type": "string",
       "default": "my-role"
     },
+    "isClusterRole": {
+      "type": "boolean",
+      "title": "Create ClusterRole",
+      "enum": [ true, false ] 
+    },
     "serviceAccountName": {
       "type": "string",
       "default": "my-service-account"
@@ -38,6 +43,5 @@
       "uniqueItems": true,
       "default":["get"]
     }
-
   }
 }

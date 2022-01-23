@@ -5,7 +5,19 @@
   },
   "targetRole": {
     "ui:title": "Target Role",
-    "ui:help": "The role to bind to the created ServiceAccount"
+    "ui:help": "The Role to bind to the created ServiceAccount",
+    "ui:widget": "resourceSelection",
+    "ui:options": {
+      "resourceKinds": "Role"
+    }
+  },
+  "targetClusterRole": {
+    "ui:title": "Target ClusterRole",
+    "ui:help": "The ClusterRole to bind to the created ServiceAccount",
+    "ui:widget": "resourceSelection",
+    "ui:options": {
+      "resourceKinds": "ClusterRole"
+    }
   },
   "namespace": {
     "ui:title": "Namespace",

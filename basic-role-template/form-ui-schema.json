@@ -3,6 +3,9 @@
     "ui:title": "Name",
     "ui:help": "The name of the Role"
   },
+  "isClusterRole": {
+    "ui:help": "Check this if the Role should be created at the Cluster level"
+  },
   "namespace": {
     "ui:title": "Namespace",
     "ui:help": "The target namespace for the Role",

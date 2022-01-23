@@ -16,8 +16,49 @@
     "namespace": {
       "type": "string"
     },
+    "isClusterRole": {
+      "type": "boolean",
+      "title": "Bind to ClusterRole",
+      "enum": [ true, false ] 
+    },
     "targetRole": {
       "type": "string"
+    },
+    "targetClusterRole": {
+      "type": "string",
+      "readOnly": true 
+    }
+  },
+  "dependencies": {
+    "isClusterRole": {
+      "oneOf": [
+        {
+          "properties": {
+            "isClusterRole": {
+              "enum": [true]
+            },
+            "targetRole": {
+              "readOnly": true
+            },
+            "targetClusterRole": {
+              "readOnly": false
+            }
+          }
+        },
+        {
+          "properties": {
+            "isClusterRole": {
+              "enum": [false]
+            },
+            "targetRole": {
+              "readOnly": false
+            },
+            "targetClusterRole": {
+              "readOnly": true
+            }
+          }
+        }
+      ]
     }
   }
 }

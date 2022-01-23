@@ -3,13 +3,16 @@
     "ui:title": "Role",
     "ui:help": "The name of the Role to create"
   },
+  "isClusterRole": {
+    "ui:help": "Check this if the Role and RoleBinding should be created at the Cluster level"
+  },
   "serviceAccountName": {
     "ui:title": "Service Account",
     "ui:help": "The name of the ServiceAccount to create"
   },
   "namespace": {
     "ui:title": "Namespace",
-    "ui:help": "The target namespace for the Role",
+    "ui:help": "The target namespace for the Role, RoleBinding and ServiceAccount",
     "ui:widget": "namespaceSelection"
   },
   "apiGroup": {
@@ -29,5 +32,4 @@
     },
     "ui:help": "A list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions for the Role."
   }
-
 }

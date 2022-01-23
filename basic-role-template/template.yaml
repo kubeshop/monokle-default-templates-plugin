@@ -1,8 +1,8 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
+kind: [[ forms[0].isClusterRole ? "ClusterRole" : "Role"]]
 metadata:
   name: [[forms[0].name]]
-[[ forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
+[[ !forms[0].isClusterRole && forms[0].namespace ? "  namespace: " + forms[0].namespace + "\n" : ""]]
 rules:
   - apiGroups:
       - [[forms[0].apiGroup]]
