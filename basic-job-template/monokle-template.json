@@ -1,5 +1,5 @@
 {
-  "name": "Basic Kubernetes Job",
+  "name": "Basic Job",
   "id": "io.kubeshop.monokle.templates.default.job-template",
   "author": "kubeshop.io",
   "version": "1.0.0",

@@ -1,5 +1,5 @@
 {
-  "name": "Basic Kubernetes Role",
+  "name": "Basic Role",
   "id": "io.kubeshop.monokle.templates.default.role-template",
   "author": "kubeshop.io",
   "version": "1.0.0",

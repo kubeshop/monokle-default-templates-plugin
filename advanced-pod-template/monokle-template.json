@@ -1,9 +1,9 @@
 {
-  "name": "Advanced Kubernetes Pod",
+  "name": "Advanced Pod",
   "id": "io.kubeshop.monokle.templates.default.advanced-pod-template",
   "author": "kubeshop.io",
   "version": "1.0.0",
-  "description": "Creates a Pod for the specified image",
+  "description": "Creates a Pod for the specified Image",
   "repository" : "",
   "type": "vanilla",
   "forms": [
