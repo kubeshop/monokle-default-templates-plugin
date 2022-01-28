@@ -1,6 +1,6 @@
 # Monokle Default Templates Plugin
 
-This plugin contains the default templates included with Monokle.
+This Monokle plugin contains the default templates included with Monokle. 
 
 ## Included templates
 
@@ -15,7 +15,11 @@ This plugin contains the default templates included with Monokle.
 | [RoleBinding and ServiceAccount](rolebinding-serviceaccount-template)            | Creates a RoleBinding and ServiceAccount for an existing Role or ClusterRole              |
 | [Role, RoleBinding and ServiceAccount](role-rolebinding-serviceaccount-template) | Creates a Role or ClusterRole with a RoleBinding or ClusterRoleBinding and ServiceAccount |
 
-
 ## Modifying / Contributing
 
-Please feel free to suggest improvements to these templates - or to create your own plugin with templates!
+Please feel free to suggest/contribute improvements to these templates - learn more about Monokle   
+plugins and templates in the documentation:
+
+- [Plugins documentation](https://kubeshop.github.io/monokle/plugins/)
+- [Templates documentation](https://kubeshop.github.io/monokle/templates/)
+
