@@ -6,6 +6,7 @@
   "description": "Creates a Job for the specified Image",
   "repository" : "",
   "type": "vanilla",
+  "icon": "basic_job.svg",
   "forms": [
     {
       "name": "Job Settings",

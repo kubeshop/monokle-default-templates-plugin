@@ -6,6 +6,7 @@
   "description": "Creates a RoleBinding and ServiceAccount for an existing Role",
   "repository" : "",
   "type": "vanilla",
+  "icon": "rolebinding.svg",
   "forms": [
     {
       "name": "RoleBinding Settings",

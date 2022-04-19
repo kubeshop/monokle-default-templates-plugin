@@ -6,6 +6,7 @@
   "description": "Creates a basic Service",
   "repository" : "",
   "type": "vanilla",
+  "icon": "basic_service.svg",
   "forms": [
     {
       "name": "Service Settings",
