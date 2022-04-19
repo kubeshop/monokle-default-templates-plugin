@@ -8,6 +8,7 @@
   "monoklePlugin": {
     "id": "io.kubeshop.monokle.plugins.default-templates",
     "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin",
+    "icon": "default_template.svg",
     "modules": [
       {
         "type": "template",
