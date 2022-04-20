@@ -6,6 +6,7 @@
   "description": "Creates a Service and Deployment for a specified Image",
   "repository" : "",
   "type": "vanilla",
+  "icon": "deployment.svg",
   "forms": [
     {
       "name": "Deployment Settings",

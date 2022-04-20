@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "description": "Creates a Pod for the specified Image",
   "repository" : "",
+  "icon": "advanced_pod.svg",
   "type": "vanilla",
   "forms": [
     {

@@ -6,6 +6,7 @@
   "description": "Creates a standalone Role",
   "repository" : "",
   "type": "vanilla",
+  "icon": "basic_role.svg",
   "forms": [
     {
       "name": "Role Settings",

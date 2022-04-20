@@ -6,6 +6,7 @@
   "description": "Creates a Pod for a specified Image",
   "repository" : "",
   "type": "vanilla",
+  "icon": "basic_pod.svg",
   "forms": [
     {
       "name": "Pod Settings",
