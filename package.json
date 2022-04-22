@@ -41,6 +41,14 @@
       {
         "type": "template",
         "path": "basic-service-template"
+      },
+      {
+        "type": "template",
+        "path": "persistent-vol-claim-template"
+      },
+      {
+        "type": "template",
+        "path": "persistent-vol-template"
       }
     ]
   }

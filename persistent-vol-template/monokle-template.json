@@ -1,0 +1,20 @@
+{
+  "name": "Basic Kubernetes Persistent Volume",
+  "id": "io.kubeshop.monokle.templates.default.persistent-vol-template",
+  "author": "Dipankar Das",
+  "version": "1.0.0",
+  "description": "Creates a Persistent Volume for your Stateful apps",
+  "repository": "",
+  "type": "vanilla",
+  "forms": [{
+    "name": "PV Settings",
+    "description": "Specifiy the settings for your PV",
+    "schema": "form-schema.json",
+    "uiSchema": "form-ui-schema.json"
+  }],
+  "manifests": [{
+    "filePath": "template.yaml"
+  }],
+  "resultMessage": "PV resource created successfully",
+  "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin"
+}

@@ -1,0 +1,27 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:help": "The name of the generated Persistent Volume"
+  },
+  "namespace": {
+    "ui:title": "Namespace",
+    "ui:help": "The target namespace for the generated Persistent Volume",
+    "ui:widget": "namespaceSelection"
+  },
+  "labels": {
+    "ui:title": "Labels",
+    "ui:help": "The label for Persistent Volume"
+  },
+  "storage": {
+    "ui:title": "Volume Size",
+    "ui:help": "The volume size for the Persistent Volume"
+  },
+  "accessMode": {
+    "ui:title": "Access Mode",
+    "ui:help": "The AccessMode for Persistent Volume"
+  },
+  "reclaim": {
+    "ui:title": "Reclaim Policy",
+    "ui:help": "The reclaim policy when the volume claim is removed"
+  }
+}
