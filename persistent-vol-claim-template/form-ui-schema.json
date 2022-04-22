@@ -1,0 +1,23 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:help": "The name of the generated Persistent Volume Claim"
+  },
+  "namespace": {
+    "ui:title": "Namespace",
+    "ui:help": "The target namespace for the generated Persistent Volume Claim",
+    "ui:widget": "namespaceSelection"
+  },
+  "labels": {
+    "ui:title": "Labels",
+    "ui:help": "The label for PVC"
+  },
+  "storage": {
+    "ui:title": "Volume Size",
+    "ui:help": "The volume size of PVC"
+  },
+  "accessMode": {
+    "ui:title": "Access Mode",
+    "ui:help": "The Access Mode for storage of PVC"
+  }
+}

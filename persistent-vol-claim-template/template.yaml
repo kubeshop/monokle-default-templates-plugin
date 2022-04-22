@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: [[forms[0].name]]
+[[ forms[0].namespace ? "  namespace: "+forms[0].namespace + "\n" : ""]]
+[[ forms[0].labels ? "  labels:\n    "+forms[0].labels + "\n" : "" ]]
+
+spec:
+  storageClassName: manual
+  resources:
+    requests:
+      storage: [[forms[0].storage]]
+  accessModes:
+    - [[forms[0].accessMode]]

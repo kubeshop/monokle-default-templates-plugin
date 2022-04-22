@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": ["name", "storage", "accessMode"],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string",
+      "default": "default"
+    },
+    "labels": {
+      "type": "string",
+      "default": "pvc: nginxApp"
+    },
+    "storage": {
+      "type": "string"
+    },
+    "accessMode": {
+      "type": "string",
+      "default": "ReadWriteOnce",
+      "enum": [
+        "ReadWriteOnce",
+        "ReadOnlyMany",
+        "ReadWriteMany",
+        "ReadWriteOncePod"
+      ]
+    }
+  }
+}
