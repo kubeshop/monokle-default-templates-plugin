@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: [[forms[0].name]]
+[[ forms[0].namespace ? "  namespace: "+forms[0].namespace + "\n" : "" ]]
+
+spec:
+  selector:
+    matchLabels:
+[[ forms[0].labels ? "      "+forms[0].labels + "\n" : ""]]
+
+  serviceName: [[forms[0].serviceN]]
+  replicas: [[forms[0].replicas]]
+  template:
+    metadata:
+      labels:
+[[ forms[0].labels ? "      labels:\n        "+forms[0].labels + "\n" : ""]]
+    spec:
+      containers:
+      - name: [[forms[0].name]]
+        image: [[forms[0].image]]
+        volumeMounts:
+        - name: local-vol
+          mountPath: ""
+  volumeClaimTemplates:
+  - metadata:
+      name: local-vol
+    spec:
+      accessModes: 
+        - [[forms[0].accessMode]]
+      storageClassName: ""
+      resources:
+        requests:
+          storage: ""

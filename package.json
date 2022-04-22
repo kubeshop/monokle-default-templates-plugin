@@ -49,6 +49,10 @@
       {
         "type": "template",
         "path": "persistent-vol-template"
+      },
+      {
+        "type": "template",
+        "path": "statefulset-template"
       }
     ]
   }
