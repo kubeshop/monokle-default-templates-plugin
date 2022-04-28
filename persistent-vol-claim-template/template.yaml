@@ -12,3 +12,4 @@ spec:
       storage: [[forms[0].storage]]
   accessModes:
     - [[forms[0].accessMode]]
+  volumeName: "" # name of the persistent volume to which we want to connect
