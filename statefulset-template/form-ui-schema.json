@@ -14,9 +14,9 @@
   },
   "labels": {
     "ui:title": "Labels",
-    "ui:help": "Labels for linking objects"
+    "ui:help": "Labels for linking objects like pvc: nginx-app"
   },
-  "serviceN": {
+  "serviceName": {
     "ui:title": "Service Name",
     "ui:help": "Service Name for StatefulSet"
   },

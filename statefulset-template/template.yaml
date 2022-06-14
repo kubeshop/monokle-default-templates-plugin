@@ -9,7 +9,7 @@ spec:
     matchLabels:
 [[ forms[0].labels ? "      "+forms[0].labels + "\n" : ""]]
 
-  serviceName: [[forms[0].serviceN]]
+  serviceName: [[forms[0].serviceName]]
   replicas: [[forms[0].replicas]]
   template:
     metadata:

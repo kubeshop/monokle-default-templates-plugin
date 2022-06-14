@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "required": ["name", "labels", "serviceN"],
+  "required": ["name", "labels", "serviceName"],
   "properties": {
     "name": {
       "type": "string"
@@ -10,13 +10,14 @@
       "default": "default"
     },
     "image": {
-      "type": "string"
+      "type": "string",
+      "default": ""
     },
     "labels": {
       "type": "string",
       "default": "ss: redis"
     },
-    "serviceN": {
+    "serviceName": {
       "type": "string"
     },
     "replicas": {

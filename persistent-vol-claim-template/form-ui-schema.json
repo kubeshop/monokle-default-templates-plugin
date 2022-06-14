@@ -10,7 +10,7 @@
   },
   "labels": {
     "ui:title": "Labels",
-    "ui:help": "The label for PVC"
+    "ui:help": "The label for PVC like pvc: pvc-nginx-app"
   },
   "storage": {
     "ui:title": "Volume Size",

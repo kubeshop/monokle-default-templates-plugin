@@ -10,7 +10,7 @@
   },
   "labels": {
     "ui:title": "Labels",
-    "ui:help": "The label for Persistent Volume"
+    "ui:help": "The label for Persistent Volume like pv: pv-nginx-app"
   },
   "storage": {
     "ui:title": "Volume Size",
