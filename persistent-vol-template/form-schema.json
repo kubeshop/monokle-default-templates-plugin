@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "required": ["name", "storage", "accessMode", "reclaim"],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string",
+      "default": "default"
+    },
+    "labels": {
+      "type": "string",
+      "default": "pv: nginx-app"
+    },
+    "storage": {
+      "type": "string"
+    },
+    "accessMode": {
+      "type": "string",
+      "default": "ReadWriteOnce",
+      "enum": [
+        "ReadWriteOnce",
+        "ReadOnlyMany",
+        "ReadWriteMany",
+        "ReadWriteOncePod"
+      ]
+    },
+    "reclaim": {
+      "type": "string",
+      "default": "Retain",
+      "enum": [
+        "Retain",
+        "Recycle",
+        "Delete"
+      ]
+    }
+  }
+}

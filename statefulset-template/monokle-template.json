@@ -1,0 +1,20 @@
+{
+  "name": "Basic Kubernetes StatefulSet",
+  "id": "io.kubeshop.monokle.templates.default.statefulset-template",
+  "author": "Dipankar Das",
+  "version": "1.0.0",
+  "description": "Creates a StatefulSet for Databases",
+  "repository": "",
+  "type": "vanilla",
+  "forms": [{
+    "name": "StatefulSet Settings",
+    "description": "Specifiy the settings for your StatefulSet",
+    "schema": "form-schema.json",
+    "uiSchema": "form-ui-schema.json"
+  }],
+  "manifests": [{
+    "filePath": "template.yaml"
+  }],
+  "resultMessage": "StatefulSet resource created successfully",
+  "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin"
+}
