@@ -10,7 +10,8 @@
   },
   "image": {
     "ui:title": "Image",
-    "ui:help": "The image name to run, for example nginx-ingress:latest"
+    "ui:help": "The image name to run, for example nginx-ingress:latest",
+    "ui:widget": "imageSelection"
   },
   "command": {
     "ui:title": "Command",

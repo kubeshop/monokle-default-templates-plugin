@@ -10,7 +10,8 @@
   },
   "image": {
     "ui:title": "Image",
-    "ui:help": "Image for the container"
+    "ui:help": "Image for the container",
+    "ui:widget": "imageSelection"
   },
   "labels": {
     "ui:title": "Labels",
