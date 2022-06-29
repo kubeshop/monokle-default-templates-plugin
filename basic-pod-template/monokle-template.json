@@ -2,9 +2,9 @@
   "name": "Basic Pod",
   "id": "io.kubeshop.monokle.templates.default.basic-pod-template",
   "author": "kubeshop.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Creates a Pod for a specified Image",
-  "repository" : "",
+  "repository": "",
   "type": "vanilla",
   "icon": "basic_pod.svg",
   "forms": [

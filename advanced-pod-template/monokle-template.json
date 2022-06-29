@@ -2,9 +2,9 @@
   "name": "Advanced Pod",
   "id": "io.kubeshop.monokle.templates.default.advanced-pod-template",
   "author": "kubeshop.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Creates a Pod for the specified Image",
-  "repository" : "",
+  "repository": "",
   "icon": "advanced_pod.svg",
   "type": "vanilla",
   "forms": [
