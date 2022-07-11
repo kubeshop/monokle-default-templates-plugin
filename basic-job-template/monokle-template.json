@@ -2,9 +2,9 @@
   "name": "Basic Job",
   "id": "io.kubeshop.monokle.templates.default.job-template",
   "author": "kubeshop.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Creates a Job for the specified Image",
-  "repository" : "",
+  "repository": "",
   "type": "vanilla",
   "icon": "basic_job.svg",
   "forms": [
