@@ -1,37 +1,29 @@
 {
-    "type": "object",
-    "required": [
-      "name",
-      "podSelector",
-      "targetPort"
-    ],
-    "properties": {
-      "name": {
-        "type": "string",
-        "default": "my-service"
-      },
-      "namespace": {
-        "type": "string"
-      },
-      "podSelector": {
-        "type": "string",
-        "default": "app: my-app-label"
-      },
-      "servicePort": {
-        "type": "number",
-        "default": 80
-      },
-      "targetPort": {
-        "type": "number"
-      },
-      "serviceType": {
-        "type": "string",
-        "default": "LoadBalancer",
-        "enum": [
-          "LoadBalancer",
-          "NodePort",
-          "ClusterIP"
-        ]
-      }
-    }
-  }
+	"type": "object",
+	"required": ["name", "podSelector", "targetPort"],
+	"properties": {
+		"name": {
+			"type": "string",
+			"default": "my-service"
+		},
+		"namespace": {
+			"type": "string"
+		},
+		"podSelector": {
+			"type": "string",
+			"default": "app: my-app-label"
+		},
+		"servicePort": {
+			"type": ["number", "null"],
+			"default": 80
+		},
+		"targetPort": {
+			"type": "number"
+		},
+		"serviceType": {
+			"type": "string",
+			"default": "LoadBalancer",
+			"enum": ["LoadBalancer", "NodePort", "ClusterIP"]
+		}
+	}
+}
