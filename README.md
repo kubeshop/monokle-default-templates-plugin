@@ -14,6 +14,10 @@ This Monokle plugin contains the default templates included with Monokle.
 | [Basic Role](basic-role-template)                                                | Creates a basic Role or ClusterRole                                                       |
 | [RoleBinding and ServiceAccount](rolebinding-serviceaccount-template)            | Creates a RoleBinding and ServiceAccount for an existing Role or ClusterRole              |
 | [Role, RoleBinding and ServiceAccount](role-rolebinding-serviceaccount-template) | Creates a Role or ClusterRole with a RoleBinding or ClusterRoleBinding and ServiceAccount |
+| [Persistent Volume Claim](persistent-vol-claim-template)                         | Creates a basic PersistentVolumeClaim                                                     |
+| [Persistent Volume](persistent-vol-template)                                     | Creates a basic PersistentVolume                                                                |
+| [Stateful Set](statefulset-template)                                             | Creates a basic StatefulSet                                                                     |
+| [ValidatingAdmissionPolicy](validating-admission-policy-template)                | Creates a ValidatingAdmissionPolicy and Binding                                           |
 
 ## Modifying / Contributing
 

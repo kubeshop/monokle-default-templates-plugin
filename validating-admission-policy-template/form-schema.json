@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "required": [
+    "name",
+    "apiGroups",
+    "apiVersions",
+    "resources",
+    "expression",
+    "message",
+    "validationActions"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "mypolicy"
+    },
+    "apiGroups": {
+      "type": "string",
+      "default": "apps"
+    },
+    "apiVersions": {
+      "type": "string",
+      "default": "v1"
+    },
+    "resources": {
+      "type": "string",
+      "default": "deployments"
+    },
+    "operations": {
+      "items": {
+        "type": "string",
+        "enum": [
+          "CREATE",
+          "UPDATE",
+          "DELETE",
+          "CONNECT"
+        ]
+      },
+      "type": "array",
+      "uniqueItems": true,
+      "default": [
+        "CREATE",
+        "UPDATE"
+      ]
+    },
+    "expression": {
+      "type": "string",
+      "default": "object.spec.replicas > 3"
+    },
+    "message": {
+      "type": "string",
+      "default": "invalid input"
+    },
+    "validationActions": {
+      "items": {
+        "type": "string",
+        "enum": [
+          "Warn",
+          "Deny",
+          "Audit"
+        ]
+      },
+      "type": "array",
+      "uniqueItems": true,
+      "default": [
+        "Deny"
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ValidatingAdmissionPolicy",
+  "id": "io.kubeshop.monokle.templates.default.validating-admission-policy-template",
+  "author": "kubeshop.io",
+  "version": "1.0.0",
+  "description": "Creates a ValidatingAdmissionPolicy and a corresponding ValidatingAdmissionPolicyBinding",
+  "repository" : "",
+  "type": "vanilla",
+  "icon": "rolebinding.svg",
+  "forms": [
+    {
+      "name": "Policy Settings",
+      "description": "Specify the settings for your Policy and its Binding",
+      "schema": "form-schema.json",
+      "uiSchema": "form-ui-schema.json"
+    }
+  ],
+  "manifests": [
+    {
+      "filePath": "template.yaml"
+    }
+  ],
+  "resultMessage": "ValidatingAdmissionPolicy and Binding resources created successfully!",
+  "helpUrl": "https://github.com/kubeshop/monokle-default-templates-plugin"
+}
