@@ -1,0 +1,34 @@
+{
+  "name": {
+    "ui:title": "Name",
+    "ui:help": "The name of the Policy and Policy Binding to create"
+  },
+  "apiGroups": {
+    "ui:title": "apiGroups",
+    "ui:help": "The API groups that this policy applies to, '*' is all groups."
+  },
+  "apiVersions": {
+    "ui:title": "apiVersions",
+    "ui:help": "The API versions that this policy applies to, '*' is all versions."
+  },
+  "resources": {
+    "ui:title": "Resources",
+    "ui:help": "A list of resources that this policy appies to, '*' is all resources."
+  },
+  "operations": {
+    "ui:title": "Operations",
+    "ui:help": "The operations this policy applies to"
+  },
+  "expression": {
+    "ui:title": "Expression",
+    "ui:help": "The CEL expression to evaluate for matching resources"
+  },
+  "message": {
+    "ui:title": "Message",
+    "ui:help": "The message to show if the expression fails"
+  },
+  "validationActions": {
+    "ui:title": "Validation Actions",
+    "ui:help": "The name of the Policy and Policy Binding to create"
+  }
+}

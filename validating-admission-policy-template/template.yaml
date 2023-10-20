@@ -1,0 +1,23 @@
+apiVersion: admissionregistration.k8s.io/v1beta1
+kind: ValidatingAdmissionPolicy
+metadata:
+  name: [[forms[0].name]]
+spec:
+  failurePolicy: Fail
+  matchConstraints:
+    resourceRules:
+      - apiGroups: [ "[[forms[0].apiGroups]]" ]
+        apiVersions: [ "[[forms[0].apiVersions]]" ]
+        operations: [ [[forms[0].operations ]] ]
+        resources: [ [[forms[0].resources]] ]
+  validations:
+    - expression: "[[forms[0].expression]]"
+      message: "[[forms[0].message]]"
+---
+apiVersion: admissionregistration.k8s.io/v1beta1
+kind: ValidatingAdmissionPolicyBinding
+metadata:
+  name: [[forms[0].name]]
+spec:
+  policyName: [[forms[0].name]]
+  validationActions: [ [[forms[0].validationActions.join(',')]] ]
